@@ -106,7 +106,6 @@
         
         _flickrDataArray = nil;
     }
-    
 }
 
 #pragma mark -TableViewDataSource
@@ -160,7 +159,6 @@
         _dvc.flickrInfoObjcet = ((FlickrInfo *)[_flickrDataArray objectAtIndex:indexPath.row]);
         [self.view addSubview:_dvc.view];
     }
-   
 }
 
 #pragma mark - Sorting
@@ -176,7 +174,6 @@
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [_tableView reloadData];
                 });
-                
             }];
         });
     }
@@ -194,7 +191,6 @@
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [_tableView reloadData];
                 });
-                
             }];
         });
     }
@@ -212,7 +208,6 @@
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [_tableView reloadData];
                 });
-                
             }];
         });
     }
